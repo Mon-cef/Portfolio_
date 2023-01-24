@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel = "stylesheet" type="text/css" href="css/style.css">
+    <link rel = "preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script>
+        jQuery(function(){
+            $(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 200 ) { 
+                        $('#scrollUp').css('right','10px');
+                    } else { 
+                        $('#scrollUp').removeAttr( 'style' );
+                    }
+
+                });
+            });
+        });
+    </script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <div id="scroll_to_top">
+        <div id="scrollUp">
+            <a href="#top"><img src="images/to_top.png"/></a>
+        </div>
+    </div>
+
+    <div class="hero">
+        
+        <nav>
+            <h2 class="logo">Portfo<span>lio</span></h2>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#propos">Parcour</a></li>
+                <li><a href="#studie">Études</a></li>
+                <li><a href="images/CV.pdf" target="_blank">CV</a></li>
+                <li><a href="#ct">Contacte</a></li>
+            </ul>
+            <a href="https://institutionsaintaspais.fr/" target="_blank"><img src="images/image_st.jpeg" class="saint"></a>
+        </nav>
+        <div class="content">
+            <h4>Bonjour, je m'appelle</h4>
+            <h1>Bekkouche <span>Safwân</span></h1>
+            <h3>J'étudie à l'institut : <span ><a href="https://institutionsaintaspais.fr/" target="_blank" class="spa">Saint Aspais</a></span></h3>
+        </div>
+
+    </div>
+
+    <!-----About section start-->
+
+    <section class="about" id="propos">
+        <div class="main">
+            <img src="images/photo.jpg" alt="">
+            <div class="about-text">
+                <h2>    </h2>
+                <h5>Étudiant <span>Cybersecurity & Development</span> </h5>
+                <p>Je sui un étudiant dans le domaine de <span>l'informatique</span>. J'étudie le <span>développement informatique</span>
+                    et <span>la cybersécurité</span>. Après mes 2 années de BTS SIO, je prévois de me développer dans le domaine de la <span>cybersécurité</span> 
+                    en réalisant une <span>licence</span>
+                    et plus tard un <span>Master</span> en cybersécurité. Je suis un <span>passioné</span> de la  cybersécurité
+                    et je suis <span>motivé</span> à en apprendre plus sur ce sujet et a me <span>perfectionner</span>.</p>
+                <a href="#ct"><button  type="button" >Let's Talk</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!--Studie-->
+    <section>
+        <div class="studies" id="studie">
+            <div class="title">
+                <h2>Études</h2>
+            </div>
+
+            <div class="box">
+                <div class="card">
+                    <i class="fa-solid fa-bars"></i>
+                    <h5>BTS SIO</h5>
+                    <div class="pra">
+                        <p>Dans mon BTS, il est possible de sélectionner une option en première année. SLAM qui concerne le développement informatique et SISR pour tout ce qui est réseau.
+                        </p>
+                        <p style="text-align: center;">
+                            <a class="button" href="images/Referenciel_BTS_SIO.pdf" target="_blank">Read More</a>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h5>Option SLAM</h5>
+                    <div class="pra">
+                        <p> Dans cette option, on va se concentrer sur toute la partie développement de site, d'application, de logiciel ... 
+                        </p>
+                        <p style="text-align: center;">
+                            <a class="button" href="images/Referenciel_BTS_SIO.pdf" target="_blank">Read More</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-network-wired"></i>
+                    <h5>Option SISR</h5>
+                    <div class="pra">
+                        <p> Quant à cette option, on va ce concentrer sur le fontionnement des infrastructures de différents réseau, des différents appareils qui les composent ...
+                        </p>
+                        <p style="text-align: center;">
+                            <a class="button" href="images/Referenciel_BTS_SIO.pdf" target="_blank">Read More</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!----Contact Me--->
+
+    <div class="contact-me">
+        <p>Tu veux voir de quoi je suis capable ?</p>
+        <a class="button-two" href="#ct">Contacte moi</a>
+
+    </div>
+
+    <footer>
+        <p>Bekkouche Safwân</p>
+        <p>Pour me contacter, tu peux cliquer sur les icons en bas. </p>
+        <p>Et voici mon e-mail : safwanbekkouche@gmail.com </p>
+        <div class="social" id="ct">
+            <a href="https://www.instagram.com/_safwan_0/?hl=fr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i class="fa-regular fa-at"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
